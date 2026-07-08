@@ -18,6 +18,6 @@ public class Wallet {
     private BigDecimal balance = BigDecimal.ZERO;
 
     @OneToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = true)
     private User user;
 }
